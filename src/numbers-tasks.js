@@ -272,12 +272,13 @@ function getFibonacciNumber(/* index */) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(n) {
-  let result = n;
-  for (let i = 1; i < n; i += 1) {
-    result += i;
-  }
-  return result;
+function getSumToN(/* n */) {
+  // let result = n;
+  // for (let i = 1; i < n; i += 1) {
+  //   result += i;
+  // }
+  // return result;
+  throw new Error('Not implemented');
 }
 
 /**
@@ -599,8 +600,8 @@ function getRandomInteger(/* min, max */) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
-  throw new Error('Not implemented');
+function getHypotenuse(a, b) {
+  return Math.hypot(a, b);
 }
 
 /**
@@ -617,6 +618,13 @@ function getHypotenuse(/* a, b */) {
  * 15 => 8
  */
 function getCountOfOddNumbers(/* number */) {
+  // let result = 0;
+  // for (let i = 1; i <= number; i += 1) {
+  //   if (i % 2 === 0) {
+  //     result += 1;
+  //   }
+  // }
+  // return result;
   throw new Error('Not implemented');
 }
 
